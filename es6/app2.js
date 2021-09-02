@@ -62,18 +62,41 @@
 // // console.log(value);
 // console.log(total);
 
-const author = "some author";
-const statement = "some statement";
+// const author = "some author";
+// const statement = "some statement";
 
-const quote = highlight`here is ${statement} by ${author}and it's true.`;
-console.log(quote);
+// const quote = highlight`here is ${statement} by ${author}and it's true.`;
+// console.log(quote);
 
-const result = document.getElementById("result");
-result.innerHTML = quote;
+// const result = document.getElementById("result");
+// result.innerHTML = quote;
 
-function highlight(text, ...vars) {
-  const aewsomeText=text.map((item,index)=>{
-      return `${item} <strong class="blue">${vars[index] || ""}</strong>`;
-  })
-  return aewsomeText.join('')
+// function highlight(text, ...vars) {
+//   const aewsomeText=text.map((item,index)=>{
+//       return `${item} <strong class="blue">${vars[index] || ""}</strong>`;
+//   })
+//   return aewsomeText.join('')
+// }
+
+const sayHi = () => console.log("hel");
+sayHi();
+
+const dob=value=> value*2
+const num=dob(4)
+console.log(num);
+
+
+
+const multiply=(num1,num2) =>{
+    const result =num1*num2
+    // 
+    return result
 }
+
+const sum=multiply(4,5)
+console.log(sum);
+
+// 
+const object =() => ({name:'john',jj:45})
+const person = object()
+console.log(person);
