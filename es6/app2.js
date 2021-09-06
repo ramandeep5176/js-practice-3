@@ -159,5 +159,18 @@
 //   },
 // };
 
+// function printperson({ first, last, city }) {
+//   // const{first, last, city}=person
+//   console.log(first, last, city);
+// }
+// printperson(bio);
+
 // const {first:firstname,last,city,siblings:{sister:favs}}=bio
 // console.log(firstname, last, city,favs);
+
+
+const person ='peter smith'
+const employee='2345-emp-perter-smith'
+const manager='23456-man-juhn-boe'
+
+console.log(manager.endsWith('juhn',6 );
