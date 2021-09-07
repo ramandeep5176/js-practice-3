@@ -181,22 +181,39 @@
 
 const fruits = ["orange", "apple", "lemon", "mango"];
 const longnames = "raman deep singh gill";
-let shortname = "";
+// let shortname = "";
 
-for (const letter of longnames) {
-  //   console.log(letter);
-  if (letter === " ") {
-    continue;
-  } else {
-    shortname += letter;
-  }
-}
-console.log(shortname);
+// for (const letter of longnames) {
+//   //   console.log(letter);
+//   if (letter === " ") {
+//     continue;
+//   } else {
+//     shortname += letter;
+//   }
+// }
+// console.log(shortname);
 
-for (const fruit of fruits) {
-  if (fruit === "apple") {
-    // break;
-    continue;
-  }
-  console.log(fruit);
-}
+// for (const fruit of fruits) {
+//   if (fruit === "apple") {
+//     // break;
+//     continue;
+//   }
+//   console.log(fruit);
+// }
+const udemy='udemy'
+const letters=[...udemy]
+console.log(letters);
+
+
+const boys = ["raman", "deep singh gill"];
+const girls = ["orange", "apple", "lemon", "mango"];
+const best ='arnold'
+
+const friends=[...boys,best,...girls]
+
+
+// const newfriends=friends
+const newfriends=[...friends]
+newfriends[0]='karina'
+console.log(newfriends);
+console.log(friends);
