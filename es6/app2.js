@@ -168,9 +168,35 @@
 // const {first:firstname,last,city,siblings:{sister:favs}}=bio
 // console.log(firstname, last, city,favs);
 
+// const person = "peter smith";
+// const employee = "2345-emp-perter-smith";
+// const manager = "23456-man-juhn-boe";
 
-const person ='peter smith'
-const employee='2345-emp-perter-smith'
-const manager='23456-man-juhn-boe'
+// // console.log(manager.includes("juhn"));
 
-console.log(manager.endsWith('juhn',6 );
+// const multiplyPeople=(person,amount=5)=> person.repeat(amount)
+
+// const people = multiplyPeople(person)
+// console.log(people);
+
+const fruits = ["orange", "apple", "lemon", "mango"];
+const longnames = "raman deep singh gill";
+let shortname = "";
+
+for (const letter of longnames) {
+  //   console.log(letter);
+  if (letter === " ") {
+    continue;
+  } else {
+    shortname += letter;
+  }
+}
+console.log(shortname);
+
+for (const fruit of fruits) {
+  if (fruit === "apple") {
+    // break;
+    continue;
+  }
+  console.log(fruit);
+}
