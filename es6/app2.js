@@ -315,3 +315,29 @@
 // const allGoodGrades = grades.every((grade) => (grade = "c"));
 // console.log(allGoodGrades);
 
+//
+//
+//
+//
+//
+//
+////////////////// es6 modules //////////////
+//
+//
+//
+//
+//
+
+import { random,people } from "./utils/data.js";
+import showPeople from './utils/showpeople.js'
+
+
+
+
+const container = document.querySelector(".container");
+const btn = document.querySelector(".btn");
+
+
+btn.addEventListener("click", () => {
+  container.innerHTML= showPeople(people);
+});
