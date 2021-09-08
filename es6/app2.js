@@ -253,7 +253,6 @@
 // // const { job,...rest } = person;
 // // console.log(job,rest);
 
-
 // const getaverage=(name,...scores)=>{
 //     console.log(name);
 //     console.log(scores);
@@ -267,6 +266,52 @@
 
 // getaverage(person.name,75,464,189,8563,498,464,9687,466,84)
 
-const udemy='udemy'
+// const udemy = "udemy";
 
-d
+// function countTotal() {
+//   // console.log(arguments);
+//   let total = Array.from(arguments).reduce(
+//     (total, currNum) => (total += currNum),
+//     0
+//   );
+//   console.log(total);
+// }
+
+// countTotal(56,99, 56, 8, 9, 1, 398, 64);
+
+// const p = document.querySelectorAll("p");
+// const result = document.getElementById("result");
+// const second = document.getElementById("second");
+
+// let newText = Array.from(p);
+// newText = newText.map((item) => `<span>${item.textContent}</span>`).join(" ");
+
+// result.innerHTML = newText;
+
+// const text = Array.from(document.querySelectorAll("p"), (item) => {
+//   return `<span>${item.textContent}</span>`;
+// }).join(' ');
+// second.innerHTML=text
+
+// console.log(text);
+
+// const people = [
+//   { id: 1, name: "raman" },
+//   { id: 2, name: "raman2" },
+//   { id: 3, name: "raman3" },
+// ];
+
+// const grades = ["a", "b", "c", "d"];
+// const goodGrades = ["a", "b", "d"];
+
+// // const raman3 = people.find((person) => person.name === "raman3");
+// // console.log(raman3.name);
+
+// // const person= people.findIndex(item=>item.id===3)
+// // console.log(person);
+// // const newPeople=people.slice(0,person)
+// // console.log(newPeople);
+
+// const allGoodGrades = grades.every((grade) => (grade = "c"));
+// console.log(allGoodGrades);
+
