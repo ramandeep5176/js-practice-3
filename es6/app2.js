@@ -326,17 +326,29 @@
 //
 //
 //
-//
+// //
 
-import { random, people } from "./utils/data.js";
-import showPeople from "./utils/showpeople.js";
-import get from "./utils/getelement.js";
+// import { random, people } from "./utils/data.js";
+// import showPeople from "./utils/showpeople.js";
+// import get from "./utils/getelement.js";
 
-const container = get(".container");
-const btn = get(".btn");
-const container1 = get(".container1");
-console.log(container1);
+// const container = get(".container");
+// const btn = get(".btn");
+// // const container1 = get(".container1");
+// // console.log(container1);
 
-btn.addEventListener("click", () => {
-  container.innerHTML = showPeople(people);
-});
+// btn.addEventListener("click", () => {
+//   container.innerHTML = showPeople(people);
+// });
+
+// async
+
+boilWater(000);
+console.log("chop car");
+
+function boilWater(time) {
+  console.log("boil...");
+  setTimeout(() => {
+    console.log("done...");
+  }, time);
+}
