@@ -328,16 +328,15 @@
 //
 //
 
-import { random,people } from "./utils/data.js";
-import showPeople from './utils/showpeople.js'
+import { random, people } from "./utils/data.js";
+import showPeople from "./utils/showpeople.js";
+import get from "./utils/getelement.js";
 
-
-
-
-const container = document.querySelector(".container");
-const btn = document.querySelector(".btn");
-
+const container = get(".container");
+const btn = get(".btn");
+const container1 = get(".container1");
+console.log(container1);
 
 btn.addEventListener("click", () => {
-  container.innerHTML= showPeople(people);
+  container.innerHTML = showPeople(people);
 });
