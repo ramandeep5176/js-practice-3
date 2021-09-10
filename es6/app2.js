@@ -343,12 +343,20 @@
 
 // async
 
-boilWater(000);
-console.log("chop car");
+boilWater();
 
-function boilWater(time) {
+function boilWater() {
   console.log("boil...");
   setTimeout(() => {
     console.log("done...");
-  }, time);
+    console.log("add carrt.");
+    setTimeout(() => {
+      console.log("carrt done");
+      console.log("add onion");
+      setTimeout(() => {
+        console.log("onion done");
+      }, 1000);
+    }, 1000);
+    console.log("chop onion");
+  }, 1000);
 }
