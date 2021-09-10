@@ -343,20 +343,44 @@
 
 // async
 
-boilWater();
+// boilWater();
 
-function boilWater() {
-  console.log("boil...");
-  setTimeout(() => {
-    console.log("done...");
-    console.log("add carrt.");
-    setTimeout(() => {
-      console.log("carrt done");
-      console.log("add onion");
-      setTimeout(() => {
-        console.log("onion done");
-      }, 1000);
-    }, 1000);
-    console.log("chop onion");
-  }, 1000);
-}
+// function boilWater() {
+//   console.log("boil...");
+//   setTimeout(() => {
+//     console.log("done...");
+//     console.log("add carrt.");
+//     setTimeout(() => {
+//       console.log("carrt done");
+//       console.log("add onion");
+//       setTimeout(() => {
+//         console.log("onion done");
+//       }, 1000);
+//     }, 1000);
+//     console.log("chop onion");
+//   }, 1000);
+// }
+
+const heading1 = document.querySelector(".one");
+const heading2 = document.querySelector(".two");
+const heading3 = document.querySelector(".three");
+
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {});
+
+const promise = new Promise((resolve, reject) => {
+  let value = true;
+  if (value) {
+    resolve("its true");
+  } else {
+    reject(`error maybe`);
+  }
+});
+promise
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((ror) => {
+    console.log(ror);
+  });
