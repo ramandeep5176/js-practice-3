@@ -1,19 +1,27 @@
 //
 //
 const btn = document.querySelector(".btn");
+const url = "./api/people.json";
 btn.addEventListener("click", () => {
-    getData()
+  getData(url);
 });
-function getData() {
+
+function getData(url) {
   const rrr = new XMLHttpRequest();
   // console.log(rrr);
 
-  rrr.open("GET", "./api/sample.txt");
+  rrr.open("GET", url);
   rrr.onreadystatechange = function () {
     if (rrr.readyState === 4 && rrr.status === 200) {
-      const text = document.createElement("p");
-      text.textContent = rrr.responseText;
-      document.body.appendChild(text);
+      const data = JSON.parse(rrr.responseText);
+      const displayData = data
+        .map((item) => {
+          return `<p>${item.name}</p>`;
+        })
+        .join(" ");
+      const element = document.createElement("div");
+      element.innerHTML = displayData;
+      document.body.appendChild(element);
     } else {
       console.log({
         status: rrr.status,
@@ -25,4 +33,4 @@ function getData() {
   rrr.send();
 }
 
-console.log(`hello `);
+// console.log(`hello `);
